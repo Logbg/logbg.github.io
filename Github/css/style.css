@@ -1,0 +1,56 @@
+.section {
+	padding: 30px 0;  /*Посмотри с background нету отступов  */
+}
+/* Это настройки верхнего блока header */
+.header {
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;  	/*На boostrap можно написать в html тегу (header text-center) но лучше в css*/ 
+	margin: 60px auto;
+}
+.header span {
+	display: block;
+}
+.header strong {
+	text-transform: uppercase;	/*На boostrap можно добавить в html в strong класс text-uppercase но лучше в css*/ 
+}
+.video {
+	margin-bottom: 30px;
+}
+/* Настройки нижнего блока form () */
+.form {
+	border:5px solid #2727d9;
+	padding: 35px 20px;
+}
+.form-header,.section-header {
+	text-align: center; /*На boostrap можно написать в html тегу (form-header text-center) но лучше в css*/ 
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+/* Настройка imputa */
+.form input{
+	font-size: 20px;
+	padding: 22px 15px 23px 15px; 	/* Лучше выстовлять здесь размер input а не в html  */
+	margin-bottom: 11px;
+}
+.form-input {
+	margin-bottom: 20px;
+}
+/* Настройки button */
+.form-btn {
+	display: block;
+	margin: 32px auto 0 auto;
+
+	background-color: #2727d9;
+}
+/* Настройки 2 блока section-2 h2,img */
+.feature-box img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+.feature {
+	text-align: center; /*На boostrap можно написать в html тегу (header text-center) но лучше в css*/ 
+	margin: 60px auto;
+}

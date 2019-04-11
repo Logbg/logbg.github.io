@@ -1,0 +1,79 @@
+// Пример номер 1
+// Обычный css 
+.hedaer {
+    background-color: yellow;
+    height: 5px;
+    width: 100;
+}
+// После в header есть меню
+.header nav {
+    display: flex;
+    justify-content: center;
+}
+.haeder nav ul li a {
+    padding: 20px;
+    color:#fff;
+    // .ts Который я выдумал 
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    //______________________
+}
+.header a:hover {
+    color:red;
+    background-color: yellow;
+}
+// Это стандартный пример
+// 
+// 
+// Пример номер 2
+// Примеси Less и как можно писать обычный css
+.bg() {// Это   background-color: yellow
+    background-color: yellow;
+}
+.ts(@fz:14px;) {   // (Мой выздуманный класс) Сокрощение font,text
+    font-size: @fz;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.df() { // dipslay:flex
+    display: flex;
+    justify-content: center;
+
+}
+.ser() {
+    color:rgb(61, 29, 112);
+}
+@ser:rgb(61, 29, 112);
+@f:flex;
+@center:0 auto;
+@a:absolute;
+@r:relative;
+
+// Теперь праткика less
+.header2 {
+    height: 50px;
+    width: 100%;
+    .bg;
+      nav {
+        .df;
+        .ts(5px);
+    }
+       a {
+        .ts;
+        padding: 20px;
+        color:#fff;
+    }
+      & a:hover {
+        .bg;
+        color:@ser;
+        display: @f;
+        margin: @center;
+        position: @r;
+        position: @a;
+        display: inline-block;
+        float: left;
+        .ser;
+        
+    }   
+}
